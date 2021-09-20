@@ -3,20 +3,6 @@ package TrelloTests;
 import TrelloPages.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static ru.yandex.qatools.htmlelements.matchers.WebElementMatchers.isDisplayed;
-
-import CrmPages.*;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static ru.yandex.qatools.htmlelements.matchers.WebElementMatchers.isDisplayed;
 
 public class TrelloTests extends BeforeAndAfterActions {
     @Test
