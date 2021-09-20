@@ -1,5 +1,6 @@
 package TrelloPages;
 
+import CrmPages.CreateProjectPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,8 +19,8 @@ public class LoginPageTrello extends BaseView{
     @FindBy(xpath = "//input[@name='password']")
     public WebElement inputPassword;
 
-    @FindBy(xpath = "//input[@name='login']")
-    public WebElement loginAtlassian;
+    @FindBy(xpath = "//input[contains(@value, 'Atlassian')]")
+    public WebElement loginAtlassianIsVisible;
 
     @FindBy(xpath = "//button[contains(@id,'login-submit')]")
     public WebElement loginButton;
@@ -35,8 +36,8 @@ public class LoginPageTrello extends BaseView{
         return this;
     }
 
-    public LoginPageTrello ClickFieldAtlassian(){
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='login']"))).click();
+    public LoginPageTrello loginWithAtlassianClick() {
+        loginAtlassianIsVisible.click();
         return this;
     }
     public LoginPageTrello clickLoginButton() {

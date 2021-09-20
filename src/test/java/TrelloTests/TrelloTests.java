@@ -1,4 +1,4 @@
-/*package TrelloTests;
+package TrelloTests;
 
 import TrelloPages.*;
 import org.junit.jupiter.api.DisplayName;
@@ -26,10 +26,10 @@ public class TrelloTests extends BeforeAndAfterActions {
         driver.manage().window().maximize();
         new LoginPageTrello(driver)
                 .fillInputLogin("quickusja89@hotmail.com")
-                .ClickFieldAtlassian()
+                .loginWithAtlassianClick()
                 .fillInputPassword("100989quick")
                 .clickLoginButton();
 
 
     }
-}*/
+}
