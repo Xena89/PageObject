@@ -3,6 +3,7 @@ package TrelloPages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 public class BoardsPage extends BaseView{
@@ -10,7 +11,7 @@ public class BoardsPage extends BaseView{
         super(driver);
     }
 
-    @FindBy(xpath = "//button/p[text()='Создать']")
+    @FindBy(xpath = "//button[@data-test-id = 'header-create-menu-button']")
     public WebElement createButton;
 
     @FindBy(xpath = "//button/span[text()='Создайте доску']")
@@ -37,8 +38,10 @@ public class BoardsPage extends BaseView{
         return this;
     }
 
-    public BoardsPage saveNewBoardClick() {
+    public BoardsPage saveNewBoardButtonClick() {
+        webDriverWait.until(ExpectedConditions.visibilityOf(saveNewBoardButton));
         saveNewBoardButton.click();
         return this;
     }
+
 }

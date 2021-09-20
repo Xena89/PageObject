@@ -32,7 +32,8 @@ public class TrelloTests extends BeforeAndAfterActions {
         new BoardsPage(driver)
                 .createNewClick()
                 .createNewBoardClick()
-                .fillNewBoardTitle("New Board 100500");
+                .fillNewBoardTitle("New Board 100500")
+                .saveNewBoardButtonClick();
 
     }
 }
