@@ -10,7 +10,7 @@ public class BaseView {
 
     public BaseView(WebDriver driver) {
         this.driver = driver;
-        webDriverWait = new WebDriverWait(driver, 20);
+        webDriverWait = new WebDriverWait(driver, 30);
         PageFactory.initElements(driver, this);
     }
 }

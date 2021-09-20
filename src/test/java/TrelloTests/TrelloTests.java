@@ -29,7 +29,10 @@ public class TrelloTests extends BeforeAndAfterActions {
                 .loginWithAtlassianClick()
                 .fillInputPassword("100989quick")
                 .clickLoginButton();
-
+        new BoardsPage(driver)
+                .createNewClick()
+                .createNewBoardClick()
+                .fillNewBoardTitle("New Board 100500");
 
     }
 }

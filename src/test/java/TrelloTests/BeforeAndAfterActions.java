@@ -31,8 +31,8 @@ public class BeforeAndAfterActions {
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
 
-    /*@AfterEach
+    @AfterEach
     void tearDown() {
         driver.quit();
-    }*/
+    }
 }
