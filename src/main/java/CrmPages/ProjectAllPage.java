@@ -1,5 +1,6 @@
 package CrmPages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,7 +16,7 @@ public class ProjectAllPage extends BaseView {
 
     @FindBy(xpath = createProjectXpath)
     public WebElement createProjectButton;
-
+    @Step("Нажать на кнопку создать проект")
     public CreateProjectPage createProject() {
         createProjectButton.click();
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(

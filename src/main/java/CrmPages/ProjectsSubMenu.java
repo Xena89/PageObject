@@ -1,5 +1,6 @@
 package CrmPages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +15,7 @@ public class ProjectsSubMenu extends BaseView {
 
     @FindBy(xpath = "//span[text()='Все проекты']")
     public WebElement projectsAllMenuItem;
-
+    @Step("Нажать на меню Все проекты")
     public void goToProjectsAllPage() {
         projectsAllMenuItem.click();
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(

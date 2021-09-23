@@ -25,7 +25,7 @@ public class CrmTests extends BeforeAndAfterActions{
 
         new ProjectAllPage(driver)
                 .createProject()
-                .fillName("12dsfsdfddыdfsdfsdfdfghfghваыва34554321тест")
+                .fillName("12лллст")
                 .selectOrganization()
                 .fillOrganization("Все организации")
                 .optionOrganization()
